@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<HTML>
+<HEAD>
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<TITLE> VITAP ADMISSION FORM </TITLE>
+<style> 
+body{}
+
+input[type=text] 
+{
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid pink;
+  border-radius: 2px;
+}
+
+input[type=file]
+{
+  margin: 0px 0;
+  box-sizing: border-box;
+  border: 1px solid pink;
+  border-radius: 2px;
+}
+
+input[type=tel] 
+{
+   margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid pink;
+  border-radius: 2px;
+}
+
+input[type=number] 
+{
+   margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid pink;
+  border-radius: 2px;
+}
+
+input[type=email] 
+{
+   margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid pink;
+  border-radius: 2px;
+}
+
+</style>
+</HEAD>
+
+<BODY>
+<fieldset style=" margin: 5px 0; box-sizing: display:flex; border-box; border: 5px solid green; border-radius: 3px; border-style:hidden solid double dashed;">
+<center><b>
+<p style="padding: 3px; margin: 3px; color: orange; font-size: 350%;"> Welcome to VIT-AP </p> 
+<p style="padding: 3px; margin: 3px; color: blue; font-size: 250%;"> Amravati, Guntur, Andra Pradesh </p> 
+</b></center><br>
+
+<p style="padding: 3px; margin: 3px; color: grey; font-size: 150%;"> <marquee behavior="scroll" direction="left">Placements Shines our 1st Graduating Batch</marquee> </p>
+<p style="padding: 3px; margin: 3px; color: skyblue; font-size: 150%;"> <marquee behavior="scroll" direction="right">VIT-AP offers distinctive education through its undergraduate, postgraduate and PhD programmes</marquee> </p><br> 
+
+<center><p style="padding: 3px; margin: 3px; color: green; font-size: 150%;"><b>* Fill the Admission form *</b></p><br></center>
+
+<fieldset style="margin: 5px 0; display: flex; box-sizing: border-box;  border: 4px solid red;  border-radius: 2px; border-style: dashed solid">
+<legend align="center" style="color:blue;"><i><b>* Fill all the information asked below *</b></i></legend>
+<form id="myForm" onsubmit="return validateForm()" onreset="return myFunction()" action="/action_page.php">
+
+<fieldset style="width:0px; height: 170px; margin:5px; float:left; border: 2px solid blue; border-radius: 2px; border-style: dotted solid double dashed;">
+<legend align="center" style="color:olive;"><b> File Upload:- </b></legend>
+
+<lable for="profile" style="color:red;"> <b> Profile Photo:- </b></label>
+<input type="file" id="profile" name="myprofile"><br><br>
+
+<lable for="Signature" > <b>Signature Photo:- </b></label>
+<input type="file" id="Signature" name="mySignature"><br><br>
+
+<lable for="Result - 12"> <b>Result - 10 Photo:- </b></label>
+<input type="file" id="Result - 10" name="myResult - 10">
+
+</fieldset>
+
+<fieldset style="width:250px; height: 170px; margin:5px; float:left; border: 3px solid teal; border-radius: 2px; border-style: dotted solid double dashed;">
+<legend align="center" style="color:teal;"><b>Your Detail:- </b></legend>
+<lable for="fname" style="color:blue;"> <b> Enter the First Name:- </b></label>
+<input type="text" id="fname" placeholder="First Name" name="fname" size="25"><br><br>
+
+<lable for="mname" > <b>Enter the Middle Name:- </b></label>
+<input type="text" id="mname" placeholder="Middle Name" name="mname" size="25"><br><br>
+
+<lable for="lname" > <b>Enter the Last Name:- </b></label>
+<input type="text" id="lname" placeholder="Last Name" name="lname" size="25">
+</fieldset>
+
+<fieldset style="width:250px; height: 170px; margin:5px; float:left; border: 3px solid grey; border-radius: 2px; border-style: dotted solid double dashed;">
+<legend align="center" style="color:green;"><b>Family Detail:- </b></legend>
+<lable for="fname" style="color:maroon;"> <b> Enter your Father Name:- </b></label>
+<input type="text" id="fathername" placeholder="Father's Name" name="fathername" size="30"><br><br>
+
+<lable for="lname" > <b> Enter the Mother Name:- </b></label>
+<input type="text" id="mothername" placeholder="Mother's Name" name="mothername" size="30"><br><br>
+
+<lable for="Sibling" > <b> No. of Siblings:- </b></label><br>
+<input type="tel" id="brother" placeholder="" size="1"><b> Brother and </b> <input type="tel" id="sister" placeholder="" size="1"><b> Sister</b>
+
+</fieldset>
+
+<fieldset style="width:250px; height: 170px; margin:5px; float:left; border: 3px solid yellow; border-radius: 2px; border-style: dotted solid double dashed;">
+<legend align="center" style="color:maroon;"><b>Permanent Address:- </b></legend>
+<input type="text" id="Plot No. / Tola / Chowk" placeholder="Plot No. / Tola / Chowk" size="30">
+<input type="text" id="Street" placeholder="Street" size="30">
+<input type="text" id="Sub - Street" placeholder="Sub - Street" size="30">
+<input type="text" id="City / Village" placeholder="City / Village" size="30"> 
+<input type="text" id="District" placeholder="District" size="30">
+<input type="text" id="State" placeholder="State" size="30">
+<input type="number" id="Pin" placeholder="Pin" size="6">
+</fieldset>
+
+<fieldset style="width:250px; height: 170px; margin:5px; float:left; border: 3px solid pink; border-radius: 2px; border-style: dotted solid double dashed;">
+<legend align="center" style="color:darkskyblue;"><b>Temporary Address:- </b></legend>
+<textarea style="color:pink; background-color:lightyellow;" name="address" id="address" cols="30" rows="10" placeholder="Plot No. / Tola / Chowk
+Street
+Sub - Street 
+City / Village
+District
+State
+Pin"></textarea>
+</fieldset>
+
+<fieldset style="width:250px; height: 170px; margin:5px; float:left; border: 3px solid maroon; border-radius: 2px; border-style: dotted solid double dashed;">
+<legend align="center" style="color:purple;"><b>Other information:- </b></legend>
+
+<center><fieldset style="width:130px; height: 33px; margin:2px; border: 3px solid #ccc;">
+<legend align="center" style="color:red;"><b>Date of Birth:- </b></legend>
+<input type="date" id="DOB" style="color:purple;">
+</fieldset></center>
+
+<fieldset style="width:230px; margin:2px; height: 27px; border: 3px solid silver; border-radius: 2px;border-style: dotted solid double dashed;">
+<legend align="center" style="color:aqua;"><b> Gender:-</b> </legend>
+<input type="radio" id="Gender" name="Gender">
+<label for="Male" style="color:orange;"> Male</label>
+<input type="radio" id="Gender" name="Gender">
+<label for="Female" style="color:silver;"> Female</label>
+<input type="radio" id="Gender" name="Gender">
+<label for="Other" style="color:navy;"> Other</label>
+</fieldset>
+
+<center><fieldset style="width:100px; height: 28px; margin:2px; border: 3px solid #ccc; border-style: dotted solid double dashed;">
+<legend align="center" style="color:pink;"><b>Choose Branch:-</b> </legend>
+<select id="Branch" name="Branches">
+  <option value="Select" style="color:teal;"><b> - Select - </b></option>
+  <option value="Mechanical" style="color:aqua;"><b> Mechanical </b></option>
+  <option value="Electronic" style="color:green;"><b> Electronic <b></option>
+  <option value="Information Technology" style="color:lightgreen;"><b> Information Technology <b></option>
+  <option value="Computer Science" style="color:red;"><b> Computer Science <b></option>
+  <option value="Aeronautics" style="color:blue;"><b> Aeronautics </b></option>
+  <option value="Other" style="color:darksilver;"><b> Other </b></option>
+</select>
+</fieldset></center>
+</fieldset>
+
+<fieldset style="width:220px; height: 170px; margin:5px; float:left; border: 3px solid #ccc; border-style: dotted solid double dashed;">
+<legend align="center"><b>Contact Information:- </b></legend>
+<label for="email" style="color:teal;"> <b> Enter your Emai ID:- </b></label>
+<input type="email" id="email" placeholder="anuragsinghrajsingh@gmail.com" style="color:red;" size="25"><br><br>
+
+<label for="phone" style="color:darkblue;"> <b>Enter your Mobile Number:- </b></label>
+<input type="tel" id="tel" placeholder="1234567890" size="10" style="color:grey;"><br><br>
+
+<label for="phone" style="color:maroon;"> <b>Enter Phone Number:- </b></label>
+<input type="tel" id="tel" placeholder="1234567890" size="10" style="color:blue;">
+</fieldset>
+
+<fieldset style="width:148px; height: 15px; float:center; border: 3px solid #ccc; border-style: dotted solid double dashed;">
+<button type="submit" style="color:darkgreen;"> Submit Form </button> 
+<button type="reset" style="color:red;"> Reset </button>
+</fieldset>
+</form>
+
+</fieldset>
+</fieldset>
+</div>
+
+<script>
+function myFunction() 
+{
+  if (confirm("Do you want to reset? All the filled data will be lost!")) 
+  {
+	document.getElementById("myForm").reset();
+	alert("The form was reset");
+	return true;
+  }
+
+  else 
+  {  
+	return false;
+  }
+}
+
+function validateForm()
+{
+  let x = document.getElementById("profile").value;
+
+  if (x == "") 
+  {
+    alert("Profile must be filled uploaded");
+    return false;
+  }
+
+
+  x = document.getElementById("Signature").value;
+
+  if (x == "") 
+  {
+    alert("Signature must be filled uploaded");
+    return false;
+  }
+
+
+  x = document.getElementById("Result - 10").value;
+
+  if (x == "") 
+  {
+    alert("Result - 10 must be filled uploaded");
+    return false;
+  }
+
+
+ x = document.getElementById("fname").value;
+
+  if (x == "") 
+  {
+    alert("First Name must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("lname").value;
+
+  if (x == "") 
+  {
+    alert("Last Name must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("fathername").value;
+
+  if (x == "") 
+  {
+    alert("Father Name must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("mothername").value;
+
+  if (x == "") 
+  {
+    alert("Mother Name must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("brother").value;
+
+  if (x == "") 
+  {
+    alert("No. of Brother must be filled out");
+    return false;
+  }
+
+  
+  x = document.getElementById("sister").value;
+
+  if (x == "") 
+  {
+    alert("No. of Sister must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("Plot No. / Tola / Chowk").value;
+
+  if (x == "") 
+  {
+    alert("Plot No. / Tola / Chowk must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("Street").value;
+
+  if (x == "") 
+  {
+    alert("Street must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("City / Village").value;
+
+  if (x == "") 
+  {
+    alert("City / Village must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("District").value;
+
+  if (x == "") 
+  {
+    alert("District must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("State").value;
+
+  if (x == "") 
+  {
+    alert("State must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("Pin").value;
+
+  if (x == "") 
+  {
+    alert("Pin Code must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("address").value;
+
+  if (x == "") 
+  {
+    alert("Temporary Address must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("DOB").value;
+
+  if (x == "") 
+  {
+    alert("Date of Birth must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("Gender").value;
+
+  if (x == "") 
+  {
+    alert("Gender must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("Branch").value;
+
+  if (x == "") 
+  {
+    alert("Branch must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("email").value;
+
+  if (x == "") 
+  {
+    alert("Email must be filled out");
+    return false;
+  }
+
+
+  x = document.getElementById("tel").value;
+
+  if (x == "") 
+  {
+    alert("Mobile No. must be filled out");
+    return false;
+  }
+
+
+  else
+  {
+       if (confirm("Do you want to submit? Check all the data once.")) 
+  	{
+		document.getElementById("myForm").submit();
+		alert("The form was submitted");
+		return true;
+  	}
+
+	else
+	{
+		return false;
+	}
+  }
+}
+
+</script>
+
+</BODY>
+</HTML>
